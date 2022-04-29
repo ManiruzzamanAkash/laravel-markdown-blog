@@ -1,6 +1,6 @@
 
 ## Laravel Markdown Blog
-An example blog application using Laravel and Markdown - the right way.
+An example blog application using Laravel, Markdown, Prism JS and Markdown JS - the right way.
 
 
 **Why I've done this ?**
@@ -13,6 +13,8 @@ Basically I love to write blog articles on my DevsEnv - https://devsenv.com webs
 ### External packages, I used
 1. Laravel Markdown Parser - https://github.com/GrahamCampbell/Laravel-Markdown
 1. JavaScript Markdown Editor - https://github.com/sparksuite/simplemde-markdown-editor
+1. PrismJS - https://prismjs.com/
+1. SimpleMDE - https://simplemde.com/
 
 ### How to Start
 ```php
@@ -29,6 +31,22 @@ npm install
 npm run watch
 ```
 
+### Screenshots
 
+#### Tutorial Lists Page
+![Laravel Markdown Blog](https://i.ibb.co/LkQxdX1/01-Tutorial-Lists.png)
 
+#### Tutorial Create Page
+![Laravel Create Tutorial](https://i.ibb.co/xswbMf1/02-Create-Tutorial.png)
 
+#### Tutorial Create Tutorial Fill Data
+![Tutorial Create Tutorial Fill Data](https://i.ibb.co/P5jtLPP/03-Create-Tutorial-Fill-data.png)
+
+#### Tutorial Detail Page
+![Tutorial View](https://i.ibb.co/TLfnWkT/04-View-Tutorial-after-Save.png)
+
+#### Tutorial Edit Page
+![Tutorial Edit Page](https://i.ibb.co/YLv0Dmx/05-Edit-Tutorial.png)
+
+#### After Save Tutorial
+![After Save Tutorial](https://i.ibb.co/XpzQR89/06-After-Save-Tutorial.png)
