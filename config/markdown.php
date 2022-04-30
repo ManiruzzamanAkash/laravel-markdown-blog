@@ -41,7 +41,17 @@ return [
     |
     */
 
-    'extensions' => [],
+    'extensions' => [
+        // 'League\CommonMark\Extension\TableOfContents\TableOfContentsExtension',
+        'League\CommonMark\Extension\ExternalLink\ExternalLinkExtension',
+        'League\CommonMark\Extension\Autolink\AutolinkExtension',
+        'League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension',
+        'League\CommonMark\Extension\SmartPunct\SmartPunctExtension',
+        'League\CommonMark\Extension\Strikethrough\StrikethroughExtension',
+        'League\CommonMark\Extension\Footnote\FootnoteExtension',
+        'League\CommonMark\Extension\Table\TableExtension',
+        'League\CommonMark\Extension\TaskList\TaskListExtension',
+    ],
 
     /*
     |--------------------------------------------------------------------------

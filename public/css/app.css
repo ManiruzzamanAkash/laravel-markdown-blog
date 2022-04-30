@@ -545,6 +545,17 @@
   z-index: 20;
 }
 
+.markdown-post .heading-permalink {
+  visibility: hidden;
+  text-decoration: none;
+  margin-left: -10px;
+}
+
+.markdown-post .heading-permalink:after {
+  content: '# ';
+  visibility: visible;
+}
+
 .hover\:-translate-y-2:hover {
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
