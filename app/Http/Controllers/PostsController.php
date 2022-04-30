@@ -130,6 +130,13 @@ class PostsController extends Controller
             return redirect()->route('posts.index');
         }
 
+        // TODO: This is just for the Live heroku project,
+        // TODO: you can remove this if you want to use the localhost
+        if ($post->slug === 'awesome-big-tutorial-with-markdown-1651298756') {
+            session()->flash('error', 'Sorry, You can not modify this tutorial because of heroku Publishing. Please create another tutorial and Edit that. !');
+            return redirect()->route('posts.index');
+        }
+
         $this->validate($request, [
             'title' => 'required|min:3|max:150',
             'description' => 'required|min:3',
@@ -160,6 +167,13 @@ class PostsController extends Controller
         if (empty($post)) {
             session()->flash('error', 'Tutorial not found !');
             return back();
+        }
+
+        // TODO: This is just for the Live heroku project,
+        // TODO: you can remove this if you want to use the localhost
+        if ($post->slug === 'awesome-big-tutorial-with-markdown-1651298756') {
+            session()->flash('error', 'Sorry, You can not delete this tutorial because of heroku Publishing. Please create another tutorial and Delete that. !');
+            return redirect()->route('posts.index');
         }
 
         if ($post->delete()) {

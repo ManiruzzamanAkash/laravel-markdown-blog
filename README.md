@@ -45,7 +45,8 @@ php artisan migrate --seed
 ## Install node, as we've used Tailwind CSS
 npm install
 
-## Run tailwind CSS in watch mode to change file
+## Run tailwind CSS in watch mode to detect any file change
+## and automatically generate app.css in public/css/app.css
 npm run watch
 ```
 
