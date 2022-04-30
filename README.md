@@ -20,14 +20,26 @@ Basically I love to write blog articles on my DevsEnv - https://devsenv.com webs
 1. SimpleMDE - https://simplemde.com/
 
 ### How to Start
-```php
-## Clone repo
+```sh
+## Clone repository
 git clone https://github.com/ManiruzzamanAkash/laravel-markdown-blog.git
+
+## Go to that folder
+cd laravel-markdown-blog
 
 ## Install composer
 composer install
 
-# Run migrations and seeder file to seed 1,000 articles
+## Create file .env and
+Copy .env.example to .env
+
+## Create a database called
+laravel_markdown
+
+## Generate Key
+php artisan key:generate
+
+# Run migrations and seeder file to seed 1,000 tutorials
 php artisan migrate --seed
 
 ## Install node, as we've used Tailwind CSS
@@ -49,7 +61,7 @@ npm run watch
 ![Tutorial Create Tutorial Fill Data](https://i.ibb.co/P5jtLPP/03-Create-Tutorial-Fill-data.png)
 
 #### Tutorial Detail Page
-![Tutorial View](https://i.ibb.co/TLfnWkT/04-View-Tutorial-after-Save.png)
+![Tutorial View](https://i.ibb.co/X569q69/04-View-Tutorial-Detail.png)
 
 #### Tutorial Edit Page
 ![Tutorial Edit Page](https://i.ibb.co/YLv0Dmx/05-Edit-Tutorial.png)

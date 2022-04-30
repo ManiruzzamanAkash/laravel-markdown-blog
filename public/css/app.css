@@ -549,6 +549,7 @@
   visibility: hidden;
   text-decoration: none;
   margin-left: -10px;
+  color: #0ed60e;
 }
 
 .markdown-post .heading-permalink:after {
