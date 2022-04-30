@@ -26,7 +26,6 @@
                 Edit
             </a>
         </div>
-        @include('_message')
         <h2 class="font-medium text-6xl py-2">
             {{ $post->title }}
         </h2>

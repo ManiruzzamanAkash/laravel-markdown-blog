@@ -27,8 +27,9 @@
 
     @include('_message')
 
-    <form action="{{ route('posts.store') }}" method="POST">
+    <form action="{{ route('posts.update', $post->id) }}" method="POST">
         @csrf
+        @method('PUT')
 
         <div class="mb-4">
             <label for="title" class="block text-gray-700 text-sm font-bold mb-2 border-slate-300">

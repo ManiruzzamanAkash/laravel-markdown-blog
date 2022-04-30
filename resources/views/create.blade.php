@@ -22,8 +22,6 @@
         </h2>
     </div>
 
-    @include('_message')
-
     <form action="{{ route('posts.store') }}" method="POST">
         @csrf
 

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @yield('styles')
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body class="m-0 font-serif">
@@ -22,7 +22,8 @@
                 <a href="{{ route('index') }}" class="text-white text-lg font-semibold no-underline mr-4">
                     Tutorials
                 </a>
-                <a href="{{ route('posts.create') }}" class="transition text-white text-lg font-semibold no-underline mr-4 border border-green-500 border-solid px-4 rounded-lg hover:bg-green-600 hover:text-white">
+                <a href="{{ route('posts.create') }}"
+                    class="transition text-white text-lg font-semibold no-underline mr-4 border border-green-500 border-solid px-4 rounded-lg hover:bg-green-600 hover:text-white">
                     Create New
                 </a>
             </div>
@@ -31,6 +32,7 @@
 
     {{-- post list card tailwind css --}}
     <div class="container mx-auto px-4 mb-6">
+        @include('_message')
         @yield('content')
     </div>
 
