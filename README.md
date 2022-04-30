@@ -24,6 +24,9 @@ git clone https://github.com/ManiruzzamanAkash/laravel-markdown-blog.git
 ## Install composer
 composer install
 
+# Run migrations
+php artisan migrate --seed
+
 ## Install node, as we've used Tailwind CSS
 npm install
 
