@@ -2,6 +2,9 @@
 ## Laravel Markdown Blog
 An example blog application using Laravel, Markdown, Prism JS and Markdown JS - the right way.
 
+### Live Demo -
+http://laravel-markdown-blog.herokuapp.com
+
 
 **Why I've done this ?**
 Basically I love to write blog articles on my DevsEnv - https://devsenv.com website by Laravel which uses **Tiny MCE Editor**, but I'm not satisfied with that. I believe, using **Markdown** is just a much better way to write blog articles.
@@ -24,7 +27,7 @@ git clone https://github.com/ManiruzzamanAkash/laravel-markdown-blog.git
 ## Install composer
 composer install
 
-# Run migrations
+# Run migrations and seeder file to seed 1,000 articles
 php artisan migrate --seed
 
 ## Install node, as we've used Tailwind CSS
